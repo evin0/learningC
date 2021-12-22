@@ -5,10 +5,9 @@
 //  Created by Evin Odisho on 12/21/21.
 //
 
-#include <stdio.h>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+#include<stdio.h>
+int main(void)
+{
+    printf("hello world\n");
     return 0;
 }

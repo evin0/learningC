@@ -7,5 +7,7 @@ int main(void)
 	printf("Enter radius:");
 	scanf("%lf", &radius);
 	printf("volume is : %lf \n\n", 4 *radius*radius*radius/3 );
+	int a =3, b = 4, c = -2;
+	printf( "%d",++a+b++);
 	return 0;
 }

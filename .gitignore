@@ -7,6 +7,9 @@
 *.obj
 *.elf
 
+# Ignore temp file
+tempCodeRunnerFile.c
+
 # Linker output
 *.ilk
 *.map

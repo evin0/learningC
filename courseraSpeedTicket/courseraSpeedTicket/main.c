@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     scanf("%lf", &speed);
     // Input check
     while (speed < 1 || speed > 100){
-        printf("Enter valid speed (between 1 and 100: ");
+        printf("Enter valid speed (between 1 and 100): ");
         scanf("%lf", &speed);
     }
     if (speed >= 65.00)

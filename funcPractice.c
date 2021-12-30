@@ -7,7 +7,6 @@ void lineLoop(int lineNum){
     for (int count = 1; count <= lineNum; ++count){
         printf("This is line %d\n", count);
     }
-    printf("In total, there were %d lines\n", lineNum);
     return;
 }
 
@@ -18,6 +17,14 @@ void startMesg(char mess[100]){
      return;
 }
 
+int numReturn(int lines){
+    int count;
+    for (count = 1; count < lines; ++count){
+    }
+    return count;
+}
+
+
 int main(){
     int lineInput;
     char myMes[100];
@@ -25,6 +32,7 @@ int main(){
     printf("Will print user defined amount of lines. Please enter number of lines to print: ");
     scanf("%d", &lineInput);
     lineLoop(lineInput);
+    printf("In total, there were %d lines.\n", numReturn(lineInput));
     printf("\n");
     return 0;
 }

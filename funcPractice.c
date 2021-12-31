@@ -24,6 +24,12 @@ int numReturn(int lines){
     return count;
 }
 
+double intToDub(int myInt){
+    myInt = 5.00;
+    double myDub = 2.500;
+    myDub = myDub * myInt;
+    return myDub;
+}
 
 int main(){
     int lineInput;
@@ -34,5 +40,7 @@ int main(){
     lineLoop(lineInput);
     printf("In total, there were %d lines.\n", numReturn(lineInput));
     printf("\n");
+    double myInt;
+    printf("The double is: %lf", intToDub(myInt));
     return 0;
 }

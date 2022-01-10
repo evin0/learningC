@@ -28,6 +28,9 @@ void printPerson(const sPerson* person, const char *comment)
 
 
 int main(){
+
+	// Will continue to dynamically allocate memory, as can be seen with
+	// increasing address values
     sPerson* first = NULL;
     sPerson* second = NULL;
     //first = getNewPerson(25);
@@ -35,5 +38,14 @@ int main(){
     printPerson(first, "first");
     printPerson(second, "second");
 
+	first = getNewPerson(25);
+    second = getNewPerson(45);
+    printPerson(first, "first");
+    printPerson(second, "second");
+
+	first = getNewPerson(25);
+    second = getNewPerson(45);
+    printPerson(first, "first");
+    printPerson(second, "second");
     return 0;
 }

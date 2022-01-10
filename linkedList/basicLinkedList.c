@@ -12,7 +12,7 @@ sPerson *getNewPerson(const int age)
     sPerson *newPerson = NULL;
     newPerson = malloc(sizeof(sPerson));
     newPerson->age = age;
-    //printf("Created new person at %p\n", newPerson);
+    printf("Created new person at %p\n", newPerson);
     return newPerson;
 };
 
@@ -28,7 +28,7 @@ void printPerson(const sPerson* person, const char *comment)
 
 
 int main(){
-
+	printf("---START---\n\n");
 	// Will continue to dynamically allocate memory, as can be seen with
 	// increasing address values
     sPerson* first = NULL;
